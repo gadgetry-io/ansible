@@ -1,0 +1,6 @@
+# SERVER TIME SYNCHRONIZATION
+- name: Install the package "chrony"
+  apt:
+    name: chrony
+    state: present
+  become: true
