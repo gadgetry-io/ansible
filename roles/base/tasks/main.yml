@@ -24,3 +24,6 @@
     state: directory
     mode: 0644
   become: true
+
+# Install Packages
+- include_tasks: packages.yml
