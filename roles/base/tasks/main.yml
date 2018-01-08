@@ -1,0 +1,23 @@
+# Create Ansible Working Directory on Host
+- file:
+    path: /var/ansible
+    owner: root
+    group: root
+    state: directory
+    mode: 0644
+
+# Create Ansible Roles Directory on Host
+- file:
+    path: /var/ansible/roles
+    owner: root
+    group: root
+    state: directory
+    mode: 0644
+
+# Create Ansible Directory for Base Role
+- file:
+    path: /var/ansible/roles/base
+    owner: root
+    group: root
+    state: directory
+    mode: 0644
