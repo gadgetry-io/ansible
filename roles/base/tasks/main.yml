@@ -5,6 +5,7 @@
     group: root
     state: directory
     mode: 0644
+  become: true
 
 # Create Ansible Roles Directory on Host
 - file:
@@ -13,6 +14,7 @@
     group: root
     state: directory
     mode: 0644
+  become: true
 
 # Create Ansible Directory for Base Role
 - file:
@@ -21,3 +23,4 @@
     group: root
     state: directory
     mode: 0644
+  become: true
